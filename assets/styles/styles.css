@@ -33,6 +33,12 @@ h3 {
     font-weight: 500;
     color: var(--primary-color);
 }
+h4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--terciary-color);
+    text-align: center;
+}
 p {
     font-size: 12px;
     font-weight: 400;
@@ -143,6 +149,7 @@ i.arrow {
     margin-top: 10px;
 }
 .card {
+    position: relative;
     display: block;
     min-width: 135px;
     padding: 10px;
@@ -151,8 +158,115 @@ i.arrow {
     background-color: var(--primary-color);
 }
 .card img {
-    transform: translateX(10px);
+    position: relative;
+    left: 50%;
+    transform: translate(-60%, 0%);
 }
 .card p {
     text-align: center;
+}
+
+
+
+.main__new-season {
+    width: 100%;
+}
+.main__new-season--title {
+    color: var(--terciary-color);
+}
+.new-season-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.card-wrap {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+.main__warranty {
+    padding: 20px 20px;
+    background-color: var(--terciary-color);
+}
+.container-cards {
+    display: flex;
+    flex-direction: column;
+}
+.main__warranty--card {
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: var(--primary-color);
+}
+.warranty-card__icon {
+    display: block;
+    color: var(--secundary-color);
+    text-align: center;
+}
+.warranty-card__title {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--secundary-color);
+}
+.warranty-card__text {
+    margin-top: 6px;
+    color: var(--secundary-color);
+    text-align: center;
+}
+
+
+.main__promotion--title {
+    font-weight: 400;
+    text-align: center;
+    color: var(--secundary-color);
+}
+#main__promotion--form {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+#main__promotion--form input {
+    width: 100%;
+    height: 30px;
+    border: 0.5px solid #bdbdbd;
+    border-radius: 8px;
+}
+.main__promotion--btn {
+    position: absolute;
+    right: 0;
+    width: 104px;
+    height: 30px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--cuaternary-color);
+}
+.main__promotion--btn img {
+    width: 16px;
+}
+
+
+
+.footer__container {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: var(--secundary-color);
+}
+.footer__texts {
+    padding: 10px 0;
+}
+.contact {
+    display: flex;
+}
+.contact i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: var(--primary-color);
 }
