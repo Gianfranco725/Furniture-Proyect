@@ -7,15 +7,44 @@
     --cuaternary-color: #D16320;
     --fifth-color: #F1E4DC;
 }
+/* Reset CSS */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    /* font-size: 62.5%; */
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e2c9af;
+}
+ul {
+    list-style: none;
+    color: #e2c9af;
+}
+li {
+    width: fit-content;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+li:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+/* Scroll-bar */
+.scroll-cards::-webkit-scrollbar {
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #148840;
+    border-radius: 32px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #19ad52;
 }
 /* animation */
 @keyframes arrow {
@@ -25,6 +54,9 @@ body {
 }
 
 /* Styles fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+}
 h1 {
     font-size: 1.6rem;
     font-weight: 500;
@@ -33,10 +65,10 @@ h1 {
 h2 {
     font-size: 2.6rem;
     font-weight: 500;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.3rem;
 }
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: var(--primary-color);
 }
@@ -79,8 +111,7 @@ section {
 /* until 564px  */
 .background-image {
     position: absolute;
-    /* top: -60px; */
-    top: calc(100vw / -3);
+    top: -26px;
     z-index: 0;
     width: 100%;
     height: 1000px;
@@ -97,6 +128,7 @@ section {
 /* 400px small image */
 @media screen and (min-width: 401px) {
     .background-image {
+        top: calc(100vw / -3);
         background-image: url('../images/presentation-image/presentation-image-medium.jpg');
     }
 }
@@ -139,10 +171,12 @@ section {
     .background-image-medium {
         top: 0;
         height: 100%;
-        background-position: right;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('../images/presentation-image/presentation-image-new-large.jpg');
+        /* background-image: url('../images/presentation-image/presentation-image-new-large.jpg'); */
+        /* background-image: url('../images/presentation-image/presentation-image-large-crop.jpg'); */
+        background-image: url('../images/presentation-image/living-room-interior-room-wall-mockup-in-warm-tones-with-dark-blue-armchair-on-wooden-flooring-3d-rendering.jpg');
     }
     main .main__principal-section {
         padding: 62px 40px;
@@ -220,6 +254,8 @@ section {
     border: 1.5px solid var(--secundary-color);
     border-radius: 8px;
     margin-bottom: 40px;
+    text-decoration: none;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
@@ -245,25 +281,28 @@ i.arrow {
 }
 .scroll-cards {
     display: flex;
-    min-width: 300px;
+    width: 100%;
     overflow-x: scroll;
-    margin-top: 10px;
+    padding-bottom: 8px;
+    margin-top: 20px;
 }
 .card {
-    position: relative;
     display: block;
     min-width: 135px;
     padding: 10px;
     margin-right: 10px;
     border-radius: 8px;
+    background-size: cover;
     background-color: var(--fifth-color);
+    cursor: pointer;
 }
 .card img {
     position: relative;
     left: 50%;
-    transform: translate(-60%, 0%);
+    transform: translate(-58%, 0%);
 }
 .card p {
+    color: var(--secundary-color);
     text-align: center;
 }
 
@@ -284,19 +323,21 @@ i.arrow {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .card-grid {
     overflow: hidden;
     border-radius: 8px;
     background-size: cover;
     background-color: var(--fifth-color);
+    cursor: pointer;
 }
 .card-grid img {
     width: 100%;
 }
 .card-grid p {
     padding: 10px;
+    color: var(--secundary-color);
 }
 
 .main__warranty {
@@ -311,7 +352,11 @@ i.arrow {
     margin: 0 auto;
 }
 .main__warranty--card {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 360px;
     padding: 30px;
     border-radius: 8px;
     margin: 10px 0;
@@ -319,11 +364,12 @@ i.arrow {
 }
 .warranty-card__icon {
     display: block;
+    /* margin-top: 12px; */
     color: var(--secundary-color);
     text-align: center;
 }
 .warranty-card__title {
-    margin-top: 20px;
+    margin-top: 6px;
     text-align: center;
     color: var(--secundary-color);
 }
@@ -347,18 +393,23 @@ i.arrow {
 }
 #main__promotion--form input {
     width: 100%;
-    height: 30px;
+    height: 32px;
+    padding-left: 16px;
     border: 0.5px solid #bdbdbd;
     border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 .main__promotion--btn {
     position: absolute;
     right: 0;
     width: 104px;
-    height: 30px;
+    height: 32px;
     border: none;
     border-radius: 0 8px 8px 0;
     background-color: var(--cuaternary-color);
+    cursor: pointer;
 }
 .main__promotion--btn img {
     width: 16px;
@@ -380,6 +431,7 @@ i.arrow {
     grid-template-columns: repeat(4, 1fr);
 }
 .footer__texts {
+    display: inline-block;
     padding: 10px 0;
 }
 .contact {
