@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "item": "Pillow",
+        "title": "Title example of pillow",
+        "description": "description example of pillow",
+        "price": 100,
+        "src": "./assets/images/beautiful-luxury-hotel-bedroom-small.jpg"
+    },
+    {
+        "id": 2,
+        "item": "Sofa",
+        "title": "Title example of sofa",
+        "description": "description example of sofa",
+        "price": 320,
+        "src": "./assets/images/gray-sofa-in-white-living-room-interior-with-copy-space-3d-rendering-small.jpg"
+    },
+    {
+        "id": 3,
+        "item": "Television",
+        "title": "Title example of television",
+        "description": "description example of television",
+        "price": 320,
+        "src": "./assets/images/gray-sofa-in-white-living-room-interior-with-copy-space-3d-rendering-small.jpg"
+    },
+    {
+        "id": 4,
+        "item": "Wash Basin",
+        "title": "Title example of Wash Basin",
+        "description": "description example of Wash Basin",
+        "price": 320,
+        "src": "./assets/images/minimalistic-kitchen-corner-small.jpg"
+    }
+]

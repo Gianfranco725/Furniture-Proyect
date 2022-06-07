@@ -6,15 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover our latest furniture, lighting, and home décor sales and discounts.">
     <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/medias.css">
     <title>Proyect furniture website</title>
+    <!-- Scrips -->
+    <script src="https://kit.fontawesome.com/7da98ef3c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         
         <div class="header__container">
-            <h1 class="logo">Logo</h1>
-            <i>Icon</i>
+            <h1 class="logo">Furniture</h1>
+            <i class="fa-solid fa-bars" id="hamburger-icon"></i>
 
+            <ul class="header__list">
+                <li class="header__list--text">
+                    <a href="">Living Room Furniture</a>
+                </li>
+                <li class="header__list--text">
+                    <a href="">Dining Room Furniture</a>
+                </li>
+                <li class="header__list--text">
+                    <a href="">Home Room Furniture</a>
+                </li>
+                <li class="header__list--text">
+                    <a href="">Bedroom Room Furniture</a>
+                </li>
+                <li class="header__list--text">
+                    <a href="">Best Sellers Room Furniture</a>
+                </li>
+                <li class="header__list--text">
+                    <a href="">Small Spaces Furniture</a>
+                </li>
+            </ul>
         </div>
 
     </header>
@@ -88,25 +111,25 @@
                 <h3 class="main__new-season--title">New season, new deals</h3>
                 <div class="new-season-cards">
     
-                    <a class="card-grid">
+                    <a class="card-grid" href="./sections/New-season/pillow.html">
                         <img src="../assets/images/beautiful-luxury-hotel-bedroom-small.jpg" alt="">
-                        <p>Chairs</p>
+                        <p>Pillows</p>
                     </a>
 
                     <a class="card-grid">
                         <img src="../assets/images/gray-sofa-in-white-living-room-interior-with-copy-space-3d-rendering-small.jpg" alt="">
-                        <p>Chairs</p>
+                        <p>Sofa</p>
                     </a>
 
                     
                     <a class="card-grid">
                         <img src="../assets/images/home-interior-small.jpg" alt="">
-                        <p>Chairs</p>
+                        <p>Television</p>
                     </a>
 
                     <a class="card-grid">
                         <img src="../assets/images/minimalistic-kitchen-corner-small.jpg" alt="">
-                        <p>Chairs</p>
+                        <p>Wash Basin</p>
                     </a>
     
                 </div>
@@ -121,17 +144,17 @@
             <div class="container-cards">
 
                 <div class="main__warranty--card">
-                    <i class="warranty-card__icon"><img src="../assets/images/icons/icons8-enviado-32.png" alt=""></i>
+                    <i class="fa-solid fa-money-bill-wave warranty-card__icon"></i>
                     <h3 class="warranty-card__title">Price cuts</h3>
                     <p class="warranty-card__text">Always low prices</p>
                 </div>
                 <div class="main__warranty--card">
-                    <i class="warranty-card__icon"><img src="../assets/images/icons/icons8-enviado-32.png" alt=""></i>
+                    <i class="fa-solid fa-truck warranty-card__icon"></i>
                     <h3 class="warranty-card__title">Shipping with fast delivery</h3>
                     <p class="warranty-card__text">Less time waiting more enjoying</p>
                 </div>
                 <div class="main__warranty--card">
-                    <i class="warranty-card__icon"><img src="../assets/images/icons/icons8-enviado-32.png" alt=""></i>
+                    <i class="fa-solid fa-thumbs-up warranty-card__icon"></i>
                     <h3 class="warranty-card__title">instant online approval</h3>
                     <p class="warranty-card__text">Visits immediately, if you are approved</p>
                 </div>
@@ -157,22 +180,6 @@
 
     <footer class="footer">
         <div class="footer__container">
-
-            <h3 class="footer__title">Logo</h3>
-            <div class="scroll-cards">
-                <a class="card">
-                    <img src="../assets/images/images/chairs/gray-chair-small.png" alt="">
-                    <p>Chairs</p>
-                </a>
-                <a class="card">
-                    <img src="../assets/images/images/chairs/gray-chair-small.png" alt="">
-                    <p>Chairs</p>
-                </a>
-                <a class="card">
-                    <img src="../assets/images/images/chairs/gray-chair-small.png" alt="">
-                    <p>Chairs</p>
-                </a>
-            </div>
             <div class="footer-grid">
                 <div class="footer-grid__card">
                     <a href="" class="footer__texts">
@@ -224,11 +231,16 @@
                 </div>
             </div>
             <div class="contact">
-                <i></i>
-                <i></i>
-                <i></i>
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
-
         </div>
 
     </footer>

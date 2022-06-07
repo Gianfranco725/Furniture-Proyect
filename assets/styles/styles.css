@@ -82,14 +82,20 @@ p {
     font-size: 1.2rem;
     font-weight: 400;
 }
-/* Styles standard */
+#hamburger-icon {
+    display: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
 section {
     position: relative;
     top: 0;
     width: 100%;
     padding: 30px 20px;
 }
-
+.logo {
+    pointer-events: none;
+}
 .header {
     position: relative;
     top: 0;
@@ -102,13 +108,23 @@ section {
 }
 .header__container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
+.header__list {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.header__list--text a:hover {
+    color: var(--fifth-color);
+}
 
-/* until 564px  */
 .background-image {
     position: absolute;
     top: -26px;
@@ -123,91 +139,6 @@ section {
 }
 .background-image-medium {
     display: none;
-}
-
-/* 400px small image */
-@media screen and (min-width: 401px) {
-    .background-image {
-        top: calc(100vw / -3);
-        background-image: url('../images/presentation-image/presentation-image-medium.jpg');
-    }
-}
-
-/* until 580px */
-@media screen and (min-width: 455px) {
-    .background-image {
-        top: calc(100vw / -1.8);
-        height: 1366px;
-    }
-}
-
-/* until 844px */
-@media screen and (min-width: 580px) {
-    .background-image {
-        display: none;
-    }
-    .background-image-medium {
-        display: block;
-        position: absolute;
-        /* top: 0; */
-        top: calc(100vw / -5);
-        right: 0px;
-        width: 54%;
-        height: 1366px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url('../images/presentation-image/presentation-image-medium.jpg');
-        z-index: 0;
-    }
-}
-
-@media screen and (min-width: 844px) {
-    * {
-        font-size: 12px;
-    }
-    .header {
-        padding: 27px 40px;
-    }
-    .background-image-medium {
-        top: 0;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* background-image: url('../images/presentation-image/presentation-image-new-large.jpg'); */
-        /* background-image: url('../images/presentation-image/presentation-image-large-crop.jpg'); */
-        background-image: url('../images/presentation-image/living-room-interior-room-wall-mockup-in-warm-tones-with-dark-blue-armchair-on-wooden-flooring-3d-rendering.jpg');
-    }
-    main .main__principal-section {
-        padding: 62px 40px;
-    }
-    section {
-        padding: 30px 40px;
-    }
-    .main__principal-section--texts .main__principal-section--cta-btn {
-        width: 110px;
-        padding: 6px 0px;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    * {
-        font-size: 13.2px;
-    }
-    .header {
-        padding: 27px 64px;
-    }
-    main .main__principal-section {
-        padding: 62px 64px;
-    }
-    section {
-        padding: 38px 64px;
-    }
-}
-@media screen and (min-width: 1500px) {
-    .main__principal-section {
-        padding: 62px 120px;
-    }
 }
 
 .main__container {
@@ -241,6 +172,9 @@ section {
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
+}
+.main__principal-section--title {
+    color: var(--secundary-color);
 }
 .main__principal-section--text {
     font-weight: 400;
@@ -361,10 +295,11 @@ i.arrow {
     border-radius: 8px;
     margin: 10px 0;
     background-color: var(--primary-color);
+    pointer-events: none;
 }
 .warranty-card__icon {
     display: block;
-    /* margin-top: 12px; */
+    font-size: 2.4rem;
     color: var(--secundary-color);
     text-align: center;
 }
@@ -384,6 +319,7 @@ i.arrow {
     font-weight: 400;
     text-align: center;
     color: var(--secundary-color);
+    pointer-events: none;
 }
 #main__promotion--form {
     position: relative;
@@ -434,8 +370,12 @@ i.arrow {
     display: inline-block;
     padding: 10px 0;
 }
+.footer__texts--list a:hover{
+    color: var(--fifth-color);
+}
 .contact {
     display: flex;
+    margin-top: 8px;
 }
 .contact i {
     display: block;
@@ -445,4 +385,10 @@ i.arrow {
     margin-top: 10px;
     margin-right: 10px;
     background-color: var(--primary-color);
+}
+.fa-github, .fa-linkedin, .fa-instagram {
+    padding: 7px 0;
+    color: var(--secundary-color);
+    font-size: 2rem;
+    text-align: center;
 }
