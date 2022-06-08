@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover our latest furniture, lighting, and home décor sales and discounts.">
-    <link rel="stylesheet" href="../../../assets/styles/styles.css">
-    <link rel="stylesheet" href="../../../assets/styles/medias.css">
+    <link rel="stylesheet" href="../../../assets/styles/styles-products.css">
+    <link rel="stylesheet" href="../../../assets/styles/medias-products.css">
     <title>Proyect furniture website</title>
     <!-- Scrips -->
     <script src="https://kit.fontawesome.com/7da98ef3c2.js" crossorigin="anonymous"></script>
@@ -15,7 +15,9 @@
     <header class="header">
         
         <div class="header__container">
-            <h1 class="logo">Furniture</h1>
+            <h1>
+                <a class="logo" href="../../index.html">Furniture</a>
+            </h1>
             <i class="fa-solid fa-bars" id="hamburger-icon"></i>
 
             <ul class="header__list">
@@ -44,16 +46,52 @@
 
     
     <main class="main__container">
-<!--         <section class="main__product-container">
-            <div class="product-container">
-                <img src="" alt="">
+        <section class="main__product">
+
+            <div class="main__product-container">
+                <div class="product-container">
+                    <img src="../../../assets/images/beautiful-luxury-hotel-bedroom-large.jpg" alt="">
+                </div>
+    
+                <div class="product-information">
+                    <h2 class="title-product">Title product</h2>
+                    <div class="product-review-container">
+                        <div class="reviews">12345</div>
+                        <p>SKU: 123456</p>
+                    </div>
+
+                    <h3 class="price-product">$190,99</h3>
+
+                    <div class="shipping-method">
+                        <p>Ship to home</p>
+                        <p>Est. Arrival: 06/17/22 - 06/21/22</p>
+                    </div>
+                    <div class="to-buy-product">
+                        <div class="quantity">
+                            <i class="fa-solid fa-minus"></i>
+                            <p>2</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="to-buy">
+                            <p>add to cart</p>
+                        </div>
+                    </div>
+
+                    <div class="specification-product">
+                        <h3 class="specification-product__title">Specifications</h3>
+                        <ul class="specification-list">
+                            <li>Queen size</li>
+                            <li>Slats to top of headboard: 29"H</li>
+                            <li>Slats to top of footboard: 14.5"H</li>
+                            <li>Overall: 62.68"W x 85.43"D x 34.65"H, 143.32 lbs.</li>
+                            <li>Under-bed clearance: 5.63"H</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="product-information">
-                <h4>Title product</h4>
-
-            </div>
-        </section> -->
+        </section>
 
         <section class="main__promotion-email">
             <h3 class="main__promotion--title">Get up to a $100 discount by registering in our mail</h3>
@@ -65,7 +103,7 @@
                     autocomplete="off"
                 />
                 
-                <button class="main__promotion--btn" type="submit"><img src="../assets/images/icons/icons8-enviado-32.png" alt=""></button>
+                <button class="main__promotion--btn" type="submit"><img src="../../../assets/images/icons/icons8-enviado-32.png" alt=""></button>
             </form>
         </section>
     </main>
