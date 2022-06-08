@@ -1,17 +1,20 @@
+/* Medias */
+@import url('./styles.css');
+
 @media screen and (min-width: 320px) {
-    .header__container {
+    .header .header__container {
         flex-direction: row;
     }
-    .header__list {
+    .header__container .header__list {
         display: none;
     }
-    #hamburger-icon {
+    .header__container #hamburger-icon {
         display: block;
     }
 }
 /* 400px small image */
 @media screen and (min-width: 401px) {
-    .background-image {
+    .main__container .background-image {
         top: calc(100vw / -3);
         background-image: url('../images/presentation-image/presentation-image-medium.jpg');
     }
@@ -19,7 +22,7 @@
 
 /* until 580px */
 @media screen and (min-width: 455px) {
-    .background-image {
+    .main__container .background-image {
         top: calc(100vw / -1.8);
         height: 1366px;
     }
@@ -27,10 +30,10 @@
 
 /* until 844px */
 @media screen and (min-width: 580px) {
-    .background-image {
+    .main__container .background-image {
         display: none;
     }
-    .background-image-medium {
+    .main__principal-section .background-image-medium {
         display: block;
         position: absolute;
         /* top: 0; */
@@ -49,19 +52,19 @@
     * {
         font-size: 12px;
     }
-    .header {
+    #body .header {
         padding: 27px 40px;
     }
-    .header__container {
+    .header .header__container {
         flex-direction: column;
     }
-    .header__list {
+    .header__container .header__list {
         display: flex;
     }
-    #hamburger-icon {
+    .header__container #hamburger-icon {
         display: none;
     }
-    .background-image-medium {
+    .main__principal-section .background-image-medium {
         top: 0;
         height: 100%;
         background-position: center;
@@ -87,7 +90,7 @@
     * {
         font-size: 13.2px;
     }
-    .header {
+    #body .header {
         padding: 27px 64px;
     }
     main .main__principal-section {
@@ -98,7 +101,7 @@
     }
 }
 @media screen and (min-width: 1500px) {
-    .main__principal-section {
+    .main__container .main__principal-section {
         padding: 62px 120px;
     }
 }

@@ -1,3 +1,5 @@
+import '../assets/styles/medias.css'
+
 const body = document.getElementById('body');
 const promotionEmail = document.getElementById('promotionEmail')
 const alertEmail = document.getElementById('alertEmail')
