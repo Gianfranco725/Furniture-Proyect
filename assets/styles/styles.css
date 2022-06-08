@@ -320,6 +320,9 @@ i.arrow {
 }
 
 
+.main__promotion-email {
+    position: relative;
+}
 .main__promotion--title {
     font-weight: 400;
     text-align: center;
@@ -356,6 +359,104 @@ i.arrow {
     width: 16px;
 }
 
+#alertEmail__background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 60, 60, 0.7);
+    backdrop-filter: blur(2px);
+    transition: all 0.6s;
+    z-index: 9;
+}
+#alertEmail {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    padding: 30px;
+    background-color: var(--cuaternary-color);
+    border-radius: 4px;
+    text-align: center;
+    z-index: 10;
+}
+#alertEmail i {
+    color: var(--secundary-color);
+    font-size: 4.8rem;
+}
+#alertEmail h4 {
+    color: var(--secundary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.alertEmail__text {
+    margin: 15px 0 10px 0;
+}
+.alertEmail__button {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 2px solid var(--secundary-color);
+    border-radius: 4px;
+}
+.alertEmail__button:hover {
+    background-color: var(--fifth-color);
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+
+#submitEmail__background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 60, 60, 0.7);
+    backdrop-filter: blur(2px);
+    transition: all 0.6s;
+    z-index: 9;
+}
+#submitEmail {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    padding: 30px;
+    background-color: var(--cuaternary-color);
+    border-radius: 4px;
+    text-align: center;
+    z-index: 10;
+}
+#submitEmail i {
+    color: var(--submitdary-color);
+    font-size: 4.8rem;
+}
+#submitEmail h4 {
+    color: var(--secundary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.submitEmail__text {
+    margin: 15px 0 10px 0;
+}
+.submitEmail__button {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 2px solid var(--secundary-color);
+    border-radius: 4px;
+}
+.submitEmail__button:hover {
+    background-color: var(--fifth-color);
+    transition: all 0.1s;
+    cursor: pointer;
+}
 
 
 .footer {
@@ -382,7 +483,20 @@ i.arrow {
     display: flex;
     margin-top: 8px;
 }
-.contact i {
+/* .fa-brands {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    font-size: 2rem;
+    text-align: center;
+} */
+
+.contact a {
     display: block;
     width: 40px;
     height: 40px;
@@ -391,9 +505,11 @@ i.arrow {
     margin-right: 10px;
     background-color: var(--primary-color);
 }
-.fa-github, .fa-linkedin, .fa-instagram {
-    padding: 7px 0;
+.fa-brands {
+    position: relative;
+    top: 50%;
+    transform: translate(-48%, -49%);
+    left: 50%;
     color: var(--secundary-color);
     font-size: 2rem;
-    text-align: center;
 }

@@ -11,7 +11,7 @@
     <!-- Scrips -->
     <script src="https://kit.fontawesome.com/7da98ef3c2.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
     <header class="header">
         
         <div class="header__container">
@@ -95,14 +95,31 @@
             <form id="main__promotion--form">
                 <input
                     class="input-promotion"
-                    type="text"
+                    type="email"
                     name="promotionEmail"
+                    id="promotionEmail"
                     autocomplete="off"
+                    title="Enter a valid email"
                 />
                 
                 <button class="main__promotion--btn" type="submit"><img src="../../../assets/images/icons/icons8-enviado-32.png" alt=""></button>
             </form>
         </section>
+
+        <div class="alerts">
+            <div id="alertEmail__background"></div>
+            <div id="alertEmail">
+                <i class="fa-solid fa-bomb"></i>
+                <h4 class="alertEmail__text">hubo un error con su email</h4>
+                <h4 class="alertEmail__button">Try another</h4>
+            </div>
+            <div id="submitEmail__background"></div>
+            <div id="submitEmail">
+                <i class="fa-solid fa-circle-check"></i>
+                <h4 class="submitEmail__text">Pronto recibiras un email</h4>
+                <h4 class="submitEmail__button">Thanks</h4>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -171,6 +188,6 @@
         </div>
 
     </footer>
-    <script src="../src/index.js"></script>
+    <script src="../../../src/index.js"></script>
 </body>
 </html>
